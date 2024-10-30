@@ -1,0 +1,25 @@
+.gtm-hide-sm {
+	@media screen and (max-width: 767.999999px) {
+		display: none !important;
+	}
+}
+
+.gtm-hide-md {
+	@media screen and (min-width: 768px) and (max-width: 1023.999999px) {
+		display: none !important;
+	}
+}
+
+.gtm-hide-lg {
+	@media screen and (min-width: 1024px) {
+		display: none !important;
+	}
+}
+
+.gtm-hide-when-first-child:first-child {
+	display: none !important;
+}
+
+.gtm-hide-when-last-child:last-child {
+	display: none !important;
+}

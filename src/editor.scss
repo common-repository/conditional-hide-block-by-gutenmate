@@ -1,0 +1,34 @@
+.gtm-block-visibility-selector {
+	border: 1px solid var(--wp-components-color-gray-600, #949494);
+	border-radius: 2px;
+	padding: 2px;
+	gap: 2px !important;
+
+	.components-button {
+		justify-content: center;
+		transition: all 0.1s ease-in-out;
+		flex: 1 1 100%;
+
+		&:not(.is-pressed):not(:hover):not(:focus):not(:active) {
+			color: #1e1e1e;
+		}
+	}
+}
+
+.gtm-hide-sm:not(.is-selected) {
+	@media screen and (max-width: 767.999999px) {
+		opacity: 0.5;
+	}
+}
+
+.gtm-hide-md:not(.is-selected) {
+	@media screen and (min-width: 768px) and (max-width: 1023.999999px) {
+		opacity: 0.5;
+	}
+}
+
+.gtm-hide-lg:not(.is-selected) {
+	@media screen and (min-width: 1024px) {
+		opacity: 0.5;
+	}
+}
